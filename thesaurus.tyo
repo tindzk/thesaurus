@@ -868,6 +868,14 @@
 	}
 }
 
+.chapter[Donate] {
+	.url[http://flattr.com/thing/79136/The-programmers-thesaurus] {
+		.image {
+			http://api.flattr.com/button/button-compact-static-100x17.png
+		}
+	}
+}
+
 .chapter[Contact] {
 	.mail[tim.nieradzik@gmx.de]{Tim Nieradzik}
 }
