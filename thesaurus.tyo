@@ -1,0 +1,873 @@
+.meta {
+	.title{The programmer's thesaurus}
+}
+
+.chapter[Introduction] {
+	.p {
+		In computer-related areas, the English language offers a broad
+		vocabulary. Therefore, naming functions and methods can be a
+		difficult task. This document aims to be a comprehensive
+		reference which will help you finding the most appropriate word
+		in all situations.
+	}
+
+	.p {
+		If you want to contribute, I'd be happy to include your changes.
+		You can find my e-mail address at the bottom of this document.
+		Alternatively, you can fork it on
+		.url[http://github.com/tindzk/thesaurus]{GitHub} and then send a
+		pull request.
+	}
+}
+
+.chapter[Variable, Property and Attribute names] {
+	.section[Object-Orientation] {
+		.list {
+			.item{action}
+			.item{arg, argument}
+			.item{attr, attribute}
+			.item{class}
+			.item{context}
+			.item{hidden}
+			.item{ident, identifier}
+			.item{inst, instance}
+			.item{itf, interface}
+			.item{memb, member}
+			.item{meth, method}
+			.item{mod, module}
+			.item{obj, object}
+			.item{param, parameter}
+			.item{priv, private}
+			.item{prop, property}
+			.item{protected}
+			.item{public}
+			.item{published}
+			.item{res, resource}
+			.item{routine}
+			.item{self}
+			.item{this}
+			.item{var, variable}
+		}
+	}
+
+	.section[Arrays] {
+		.list {
+			.item{elem, element}
+			.item{i, index}
+			.item{item}
+			.item{it, iter, iterator}
+		}
+	}
+
+	.section[Tables] {
+		.list {
+			.item{col, column}
+			.item{row}
+		}
+	}
+
+	.section[Search] {
+		.list {
+			.item{needle}
+			.item{haystack}
+			.item{off, offset}
+			.item{pos, position}
+			.item{occurrence}
+		}
+	}
+
+	.section[Trees] {
+		.list {
+			.item{node}
+			.item{path}
+		}
+	}
+
+	.section[Tasks and Operations] {
+		.list {
+			.item{action}
+			.item{op, operation}
+			.item{routine}
+			.item{task}
+			.item{proc, process}
+		}
+	}
+
+	.section[Event handling] {
+		.list {
+			.item{cb, callback}
+			.item{context}
+			.item{hook}
+			.item{sender}
+			.item{sig, signal}
+			.item{subscr, subscriber}
+		}
+	}
+
+	.section[Networking] {
+		.list {
+			.item{host}
+			.item{ip}
+			.item{socket}
+			.item{conn, connection}
+		}
+	}
+
+	.section[Web development] {
+		.list {
+			.item{sess, session}
+			.item{cookie}
+		}
+	}
+
+	.section[File] {
+		.list {
+			.item{directory}
+			.item{eof, endOfFile}
+			.item{file}
+			.item{io}
+			.item{path}
+		}
+	}
+
+	.section[Data types/structures] {
+		.list {
+			.item{buf, buffer}
+			.item{ptr, pointer}
+			.item{str, string}
+		}
+	}
+
+	.section[Links] {
+		.list {
+			.item{prev, next}
+		}
+	}
+
+	.section[Debugging and Error handling] {
+		.list {
+			.item{bug}
+			.item{crash}
+			.item{err, error, errno}
+			.item{exc, exception}
+			.item{failure}
+			.item{fix}
+			.item{prio, priority}
+			.item{st, status}
+			.item{tc, test case}
+			.item{ts, test suite}
+		}
+	}
+
+	.section[Messaging] {
+		.list {
+			.item{msg, message}
+			.item{req, request}
+			.item{resp, response}
+		}
+	}
+
+	.section[Return values] {
+		.list {
+			.item{out, output}
+			.item{res, result}
+		}
+	}
+
+	.section[Lines] {
+		.list {
+			.item{eol, endOfLine}
+			.item{bol, beginningOfLine}
+		}
+	}
+
+	.section[Positions and lengths] {
+		.list {
+			.item{off, offset}
+			.item{pos, position}
+			.item{size}
+			.item{cnt, count}
+			.item{len, length}
+		}
+	}
+
+	.section[Database] {
+		.list {
+			.item{cur, current}
+			.item{cur, cursor}
+			.item{db, database}
+			.item{qry, query}
+			.item{record}
+		}
+	}
+
+	.section[Time] {
+		.list {
+			.item{sec, s}
+			.item{msec}
+			.item{usec}
+			.item{time}
+			.item{diff, difference}
+			.item{tz, timezone}
+		}
+	}
+
+	.section[Characters and Strings] {
+		.list {
+			.item{s, str: string}
+			.item{c, ch: character}
+			.item{cstr: C string}
+			.item{sz: zero-terminated string}
+			.item{buf, buffer}
+		}
+	}
+
+	.section[General] {
+		.list {
+			.item{env, environment}
+			.item{val, value}
+		}
+	}
+}
+
+.chapter[Function names] {
+	.section[Event handling] {
+		.list {
+			.item{attach}
+			.item{bind}
+			.item{call}
+			.item{conn, connect}
+			.item{disconn, disconnect}
+			.item{emit}
+			.item{pass}
+			.item{subscribe}
+			.item{trigger}
+			.item{unsubscribe}
+		}
+	}
+
+	.section[Database] {
+		.list {
+			.item{conn, connect}
+			.item{disconn, disconnect}
+			.item{populate}
+			.item{qry, query}
+		}
+	}
+
+	.section[Test suites] {
+		.list {
+			.item{assert}
+			.item{expect}
+		}
+	}
+
+	.section[Serializing] {
+		.list {
+			.item{bundle}
+			.item{escape}
+			.item{obfuscate}
+			.item{sanitize}
+			.item{serialize}
+			.item{wrap, unwrap}
+		}
+	}
+
+	.section[Resizing] {
+		.list {
+			.item{enlarge}
+			.item{extend}
+			.item{grow}
+			.item{resize}
+		}
+	}
+
+	.section[Strings] {
+		.list {
+			.item{bind}
+			.item{concat, concatenate}
+			.item{format}
+			.item{insert}
+			.item{resize}
+			.item{trim}
+		}
+	}
+
+	.section[Trees] {
+		.list {
+			.item{appendChild}
+			.item{collapse}
+			.item{createElement}
+			.item{getChildren}
+			.item{hasChildren}
+			.item{setAttribute}
+		}
+	}
+
+	.section[Templates] {
+		.list {
+			.item{assign}
+			.item{display}
+			.item{render}
+		}
+	}
+
+	.section[Networking] {
+		.list {
+			.item{accept}
+			.item{addHandler, e.g. addEventHandler}
+			.item{bind}
+			.item{download}
+			.item{handshake}
+			.item{listen}
+			.item{read}
+			.item{send, e.g. sendAuthRequest}
+			.item{upload}
+			.item{write}
+		}
+	}
+
+	.section[Tasks] {
+		.list {
+			.item{exec, execute}
+			.item{handle}
+			.item{hold}
+			.item{process}
+			.item{request}
+			.item{respond}
+			.item{restart}
+			.item{run}
+			.item{start}
+			.item{stop}
+			.item{suspend}
+		}
+	}
+
+	.section[Receiving] {
+		.list {
+			.item{fetch}
+			.item{get, e.g getName, getById}
+			.item{grab}
+			.item{obtain}
+			.item{read}
+			.item{receive}
+			.item{request}
+			.item{retrieve}
+		}
+	}
+
+	.section[Transmitting] {
+		.list {
+			.item{send}
+			.item{transmit}
+			.item{transfer}
+		}
+	}
+
+	.section[Iterating] {
+		.list {
+			.item{getIter, getIterator}
+			.item{iter, iterate}
+			.item{key}
+			.item{map}
+			.item{next}
+			.item{prev}
+			.item{reduce}
+			.item{valid}
+			.item{value}
+			.item{walk}
+		}
+	}
+
+	.section[Checking] {
+		.list {
+			.item{can}
+			.item{has}
+			.item{is}
+		}
+	}
+
+	.section[Comparing] {
+		.list {
+			.item{cmp, compare}
+			.item{contains}
+			.item{eq, equals, isEqual}
+		}
+	}
+
+	.section[Streams] {
+		.list {
+			.item{rewind}
+			.item{tell}
+			.item{peek}
+		}
+	}
+
+	.section[File] {
+		.list {
+			.item{append}
+			.item{open}
+			.item{read}
+			.item{write}
+		}
+	}
+
+	.section[Construction] {
+		.list {
+			.item{bootstrap}
+			.item{build}
+			.item{constr, construct}
+			.item{create}
+			.item{ctor, constructor}
+			.item{decl, declare}
+			.item{init, initialize}
+			.item{install}
+			.item{load, e.g. loadFile}
+			.item{make}
+			.item{new}
+		}
+	}
+
+	.section[Destruction] {
+		.list {
+			.item{cleanup}
+			.item{clean}
+			.item{clear}
+			.item{close}
+			.item{del, delete}
+			.item{destroy}
+			.item{destruct}
+			.item{drop}
+			.item{dtor, destructor}
+			.item{erase}
+			.item{free}
+			.item{rem, remove}
+			.item{term, terminate}
+			.item{uninstall}
+			.item{unlink}
+			.item{wipe}
+		}
+	}
+
+	.section[Updating] {
+		.list {
+			.item{upd, update}
+			.item{upgr, upgrade}
+			.item{refr, refresh}
+			.item{touch (updates timestamp to match current time)}
+		}
+	}
+
+	.section[Merging] {
+		.list {
+			.item{combine}
+			.item{merge}
+			.item{concat, concatenate}
+		}
+	}
+
+	.section[Duplication] {
+		.list {
+			.item{cpy, copy}
+			.item{clone}
+			.item{dup, duplicate}
+		}
+	}
+
+	.section[Assigning] {
+		.list {
+			.item{assign}
+			.item{set}
+		}
+	}
+
+	.section[Output] {
+		.list {
+			.item{pr, print}
+			.item{echo}
+			.item{write}
+			.item{disp, display}
+		}
+	}
+
+	.section[Search] {
+		.list {
+			.item{extract}
+			.item{filter}
+			.item{find, e.g. findRoute, rfind, reverseFind}
+			.item{match}
+			.item{read}
+			.item{scan}
+			.item{search}
+			.item{seek}
+		}
+	}
+
+	.section[Error handling] {
+		.list {
+			.item{assert}
+			.item{catch}
+			.item{debug}
+			.item{except}
+			.item{expect}
+			.item{getCode}
+			.item{getFile}
+			.item{getLine}
+			.item{getMessage}
+			.item{getTrace}
+			.item{throw}
+			.item{try}
+		}
+	}
+
+	.section[Storage] {
+		.list {
+			.item{read}
+			.item{save}
+			.item{store}
+		}
+	}
+}
+
+.chapter[Class names] {
+	.list {
+		.item{Abstract, e.g. AbstractManufacturer}
+		.item{Batch}
+		.item{Behavior}
+		.item{ConcreteFilter}
+		.item{Debugger}
+		.item{Decorator}
+		.item{Facade, e.g. PurchasingFacade}
+		.item{Facade}
+		.item{Factory}
+		.item{Figure}
+		.item{Filter}
+		.item{FrontController: addPreFilter, addPostFilter, handleRequest}
+		.item{Handler}
+		.item{Implementation}
+		.item{Instance}
+		.item{Interface}
+		.item{Listener}
+		.item{Manager}
+		.item{Operation}
+		.item{Processor}
+		.item{Provider}
+		.item{Proxy}
+		.item{Registry}
+		.item{Reporter}
+		.item{Service}
+		.item{Singleton}
+		.item{Storage}
+		.item{Utils}
+	}
+
+	.section[Events] {
+		.list {
+			.item{EventDispatcher}
+			.item{Observer}
+		}
+	}
+
+	.section[Collections] {
+		.list {
+			.item{Chain, e.g. FilterChain}
+			.item{Cluster}
+			.item{Collection}
+			.item{Container}
+			.item{Repository}
+			.item{Suite}
+		}
+	}
+
+	.section[Components] {
+		.list {
+			.item{Component}
+			.item{Kit}
+			.item{Module}
+			.item{Package}
+		}
+	}
+
+	.section[Interface names] {
+		.list {
+			.item{Iterator: current, key, next, rewind, valid}
+			.item{IteratorAggregate}
+			.item{Observable: attach, detach, notify}
+			.item{Processor}
+		}
+	}
+}
+
+.chapter[Example: Car rental company] {
+	.section[Classes] {
+		.list {
+			.item{Vehicle}
+			.item{Customer}
+			.item{RentalAction}
+		}
+	}
+
+	.section[Methods] {
+		.list {
+			.item{isReturned}
+			.item{isVehicleAvailable}
+			.item{rentVehicle}
+			.item{sellVehicle}
+			.item{returnVehicle}
+			.item{startEngine}
+			.item{stopEngine}
+		}
+	}
+
+	.section[Variables] {
+		.list {
+			.item{returnDate}
+			.item{markVehicleReturned}
+			.item{rentalActions}
+		}
+	}
+
+	.section[Exceptions] {
+		.list {
+			.item{VehicleNotAvailableException}
+			.item{MileageLimitExceededException}
+		}
+	}
+}
+
+.chapter[States] {
+	.list {
+		.item{connecting}
+		.item{idling}
+		.item{initialising}
+		.item{lingering}
+		.item{processing}
+		.item{reading}
+		.item{waiting}
+		.item{writing}
+	}
+}
+
+.chapter[Roles] {
+	.list {
+		.item{Administrator}
+		.item{Author}
+		.item{Collaborator}
+		.item{Contributor}
+		.item{Editor}
+		.item{Guest}
+		.item{Manager}
+		.item{Member}
+		.item{Moderator}
+		.item{Publisher}
+		.item{Subscriber}
+		.item{User}
+		.item{Viewer}
+	}
+}
+
+.chapter[VCS commit messages] {
+	This chapter introduces some rules for commit messages and
+	provides you with a few sample sentences which you can use in
+	your own commits.
+
+	.section[Rules] {
+		.p {
+			First of all, it's advisable to generally use the present tense
+			in the header in which you only give an abstract description of
+			your changes. For consistency, terminate all header messages
+			with a point. An exception is non-linguistic contents such as
+			commands, e.g. .keyword{s/needle/replace/}
+		}
+
+		.p {
+			In the body you should go into detail. If appropriate,
+			may also want to give some background information.
+			Unlike the header, it's valid to use the past tense in
+			the body.
+		}
+
+		As for object-oriented projects, the general structure of
+		the header is:
+
+		.p {
+			.i{Module}: Message
+		}
+
+		When a commit affects multiple modules, you can enumerate them:
+
+		.p {
+			.i{Module1, Module2}: Message
+		}
+
+		Alternatively, the enumeration may be omitted if there are too
+		many.
+	}
+
+	.section[Deletion] {
+		.list {
+			.item{Delete .i{X}.}
+			.item{Get rid of .i{X}.}
+		}
+	}
+
+	.section[Bug fixing] {
+		.list {
+			.item{Fix .i{X}.}
+			.item{Fix bug.}
+			.item{Spotted with .i{X}. (e.g. Valgrind) .b{This should go into the description.}}
+		}
+	}
+
+	.section[Replacing components] {
+		.list {
+			.item{Make use of .i{X}.}
+			.item{Merge .i{X} and .i{Y}.}
+			.item{Use .i{X} in favour of .i{Y}.}
+			.item{Use .i{X} instead of .i{Y}.}
+		}
+	}
+
+	.section[General changes] {
+		.list {
+			.item{Cosmetic changes.}
+			.item{Improve .i{X}.}
+			.item{Synchronize with upstream changes.}
+			.item{Trivial change(s).}
+		}
+	}
+}
+
+.chapter[Logging levels] {
+	Sorted by severity.
+
+	.list {
+		.item{Trace}
+		.item{Debug}
+		.item{Informational}
+		.item{Warning}
+		.item{Error}
+		.item{Critical}
+		.item{Fatal}
+	}
+}
+
+.chapter[Abbreviations] {
+	Each language has a certain number of words which appears to be
+	specific to it. This chapter collects unique technical
+	vocabulary grouped by the language it primarily occurs in. The
+	purpose is to help you discovering interesting concepts and to give
+	you some inspiration for making up your own ingenious class,
+	variable and function names.
+
+	.section[PHP] {
+		.list {
+			.item{__autoload}
+			.item{__construct}
+			.item{__unset}
+			.item{trim}
+			.item{implode}
+			.item{explode}
+			.item{needle}
+			.item{haystack}
+		}
+	}
+
+	.section[C] {
+		.list {
+			.item{strcmp, sometimes: streq}
+			.item{argv, argc}
+			.item{strlen}
+			.item{strcpy}
+			.item{strdup}
+		}
+	}
+
+	.section[C++] {
+		.list {
+			.item{ctor}
+			.item{dtor}
+			.item{cstr}
+		}
+	}
+
+	.section[Haskell] {
+		.list {
+			.item{newtype}
+		}
+	}
+
+	.section[Lua] {
+		.list {
+			.item{pairs, ipairs}
+			.item{tonumber}
+		}
+	}
+
+	.section[Ruby] {
+		.list {
+			.item{puts}
+			.item{upcase}
+			.item{times}
+		}
+	}
+
+	.section[Java] {
+		.list {
+			.item{bean}
+			.item{servlet}
+			.item{datasource}
+		}
+	}
+}
+
+.chapter[Credits] {
+	Most OO-related terms were taken from the book "PHP Design
+	Patterns" by Stephan Schmidt.
+
+	.section[Contributions] {
+		.list {
+			.item{Zachary Halbrecht}
+		}
+	}
+}
+
+.chapter[License] {
+	.p {
+		Licensed under the EUPL, Version 1.1 only (the
+		.i{"Licence"}); You may not use this work except in
+		compliance with the Licence.
+	}
+
+	.p {
+		You may obtain a copy of the Licence at:
+
+		.url[http://ec.europa.eu/idabc/eupl] {
+			http://ec.europa.eu/idabc/eupl
+		}
+	}
+
+	.p {
+		Unless required by applicable law or agreed to in writing,
+		software distributed under the Licence is distributed on an
+		"AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+		either express or implied.
+	}
+
+	.p {
+		See the Licence for the specific language governing
+		permissions and limitations under the Licence.
+	}
+}
+
+
+.chapter[See also] {
+	.list {
+		.item{.url[http://github.com/tindzk/thesaurus/blob/master/thesaurus.tyo]{View source}}
+		.item{.url[http://github.com/tindzk]{GitHub account}}
+	}
+}
+
+.chapter[Contact] {
+	.mail[tim.nieradzik@gmx.de]{Tim Nieradzik}
+}
