@@ -441,6 +441,7 @@
 			.item{dtor, destructor}
 			.item{erase}
 			.item{free}
+			.item{purge}
 			.item{rem, remove}
 			.item{term, terminate}
 			.item{uninstall}
