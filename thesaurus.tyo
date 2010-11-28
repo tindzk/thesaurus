@@ -45,6 +45,7 @@
 			.item{res, resource}
 			.item{routine}
 			.item{self}
+			.item{shared}
 			.item{this}
 			.item{var, variable}
 		}
@@ -66,11 +67,25 @@
 		}
 	}
 
+	.section[Date/Time] {
+		.list {
+			.item{d, day}
+			.item{date}
+			.item{h, hour}
+			.item{hrs, hours}
+			.item{m, min, minute}
+			.item{m, month}
+			.item{mins, minutes}
+			.item{time}
+			.item{y, year}
+		}
+	}
+
 	.section[Search] {
 		.list {
 			.item{needle}
 			.item{haystack}
-			.item{off, offset}
+			.item{off, ofs, offset}
 			.item{pos, position}
 			.item{occurrence}
 		}
@@ -120,6 +135,17 @@
 		}
 	}
 
+	.section[User Interfaces] {
+		.list {
+			.item{caption}
+			.item{descr, description}
+			.item{headline}
+			.item{name}
+			.item{pg, page}
+			.item{title}
+		}
+	}
+
 	.section[File] {
 		.list {
 			.item{directory}
@@ -155,6 +181,7 @@
 			.item{prio, priority}
 			.item{st, status}
 			.item{tc, test case}
+			.item{tb, test bundle}
 			.item{ts, test suite}
 		}
 	}
@@ -248,10 +275,18 @@
 
 	.section[Database] {
 		.list {
+			.item{commit}
 			.item{conn, connect}
 			.item{disconn, disconnect}
 			.item{populate}
 			.item{qry, query}
+		}
+	}
+
+	.section[ACL] {
+		.list {
+			.item{grant}
+			.item{deny}
 		}
 	}
 
@@ -279,6 +314,22 @@
 			.item{extend}
 			.item{grow}
 			.item{resize}
+		}
+	}
+
+	.section[Compression] {
+		.list {
+			.item{compress}
+			.item{minimize}
+			.item{shorten}
+			.item{shrink}
+		}
+	}
+
+	.section[Math] {
+		.list {
+			.item{rd, round}
+			.item{rnd, random, randomize}
 		}
 	}
 
@@ -312,6 +363,16 @@
 		}
 	}
 
+	.section[Garbage Collection] {
+		.list {
+			.item{alloc, allocate}
+			.item{free}
+			.item{new}
+			.item{release}
+			.item{retain}
+		}
+	}
+
 	.section[Networking] {
 		.list {
 			.item{accept}
@@ -321,6 +382,7 @@
 			.item{handshake}
 			.item{listen}
 			.item{read}
+			.item{recv, receive}
 			.item{send, e.g. sendAuthRequest}
 			.item{upload}
 			.item{write}
@@ -350,7 +412,7 @@
 			.item{grab}
 			.item{obtain}
 			.item{read}
-			.item{receive}
+			.item{recv, receive}
 			.item{request}
 			.item{retrieve}
 		}
@@ -391,6 +453,7 @@
 		.list {
 			.item{cmp, compare}
 			.item{contains}
+			.item{diff}
 			.item{eq, equals, isEqual}
 		}
 	}
@@ -414,6 +477,7 @@
 
 	.section[Construction] {
 		.list {
+			.item{alloc, allocate}
 			.item{bootstrap}
 			.item{build}
 			.item{constr, construct}
@@ -461,9 +525,10 @@
 
 	.section[Merging] {
 		.list {
+			.item{apply}
 			.item{combine}
-			.item{merge}
 			.item{concat, concatenate}
+			.item{merge}
 		}
 	}
 
@@ -709,6 +774,7 @@
 		.list {
 			.item{Delete .i{X}.}
 			.item{Get rid of .i{X}.}
+			.item{Drop .i{X}. (e.g. .i{Drop support for X.})}
 		}
 	}
 
@@ -731,8 +797,15 @@
 
 	.section[General changes] {
 		.list {
+			.item{Change .i{X}.}
 			.item{Cosmetic changes.}
+			.item{Enhance .i{X}.}
+			.item{Facilitate .i{X}.}
 			.item{Improve .i{X}.}
+			.item{Restore .i{X}. (e.g. .i{Restore old behaviour.})}
+			.item{Revert .i{X}.}
+			.item{Revise .i{X}.}
+			.item{Rework .i{X}.}
 			.item{Synchronize with upstream changes.}
 			.item{Trivial change(s).}
 		}
@@ -789,6 +862,13 @@
 			.item{ctor}
 			.item{dtor}
 			.item{cstr}
+		}
+	}
+
+	.section[Python] {
+		.list {
+			.item{__init__}
+			.item{__new__}
 		}
 	}
 
