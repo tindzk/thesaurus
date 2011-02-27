@@ -30,6 +30,7 @@
 			.item{context}
 			.item{hidden}
 			.item{ident, identifier}
+			.item{inheritance}
 			.item{inst, instance}
 			.item{itf, interface}
 			.item{memb, member}
@@ -51,11 +52,11 @@
 		}
 	}
 
-	.section[Arrays] {
+	.section[Loops, Lists and Arrays] {
 		.list {
-			.item{elem, element}
-			.item{i, index}
-			.item{item}
+			.item{el, elem, element}
+			.item{i, idx, index}
+			.item{it, item}
 			.item{it, iter, iterator}
 		}
 	}
@@ -93,7 +94,9 @@
 
 	.section[Trees] {
 		.list {
+			.item{child}
 			.item{node}
+			.item{parent}
 			.item{path}
 		}
 	}
@@ -108,6 +111,16 @@
 		}
 	}
 
+	.section[Entities] {
+		.list {
+			.item{block}
+			.item{bundle}
+			.item{entity}
+			.item{session}
+			.item{transaction}
+		}
+	}
+
 	.section[Event handling] {
 		.list {
 			.item{cb, callback}
@@ -116,6 +129,15 @@
 			.item{sender}
 			.item{sig, signal}
 			.item{subscr, subscriber}
+		}
+	}
+
+	.section[Memory] {
+		.list {
+			.item{allocator}
+			.item{arena}
+			.item{mem, memory}
+			.item{pool}
 		}
 	}
 
@@ -258,6 +280,12 @@
 }
 
 .chapter[Function names] {
+	.section[Object-Orientation] {
+		.list {
+			.item{inherit}
+		}
+	}
+
 	.section[Event handling] {
 		.list {
 			.item{attach}
@@ -344,6 +372,19 @@
 		}
 	}
 
+	.section[Loops, Lists and Arrays] {
+		.list {
+			.item{bwd, backward}
+			.item{each, foreach}
+			.item{enum, enumerate}
+			.item{fwd, forward}
+			.item{iter, iterate}
+			.item{list}
+			.item{rev, reverse}
+			.item{rpt, repeat}
+		}
+	}
+
 	.section[Trees] {
 		.list {
 			.item{appendChild}
@@ -363,9 +404,10 @@
 		}
 	}
 
-	.section[Garbage Collection] {
+	.section[Memory and Garbage Collection] {
 		.list {
 			.item{alloc, allocate}
+			.item{dispose}
 			.item{free}
 			.item{new}
 			.item{release}
@@ -418,11 +460,20 @@
 		}
 	}
 
-	.section[Transmitting] {
+	.section[Transmission] {
 		.list {
+			.item{deliver}
 			.item{send}
-			.item{transmit}
 			.item{transfer}
+			.item{transmit}
+		}
+	}
+
+	.section[Clusters and Collections] {
+		.list {
+			.item{accumulate}
+			.item{aggregate}
+			.item{collect}
 		}
 	}
 
@@ -501,9 +552,11 @@
 			.item{del, delete}
 			.item{destroy}
 			.item{destruct}
+			.item{dispose}
 			.item{drop}
 			.item{dtor, destructor}
 			.item{erase}
+			.item{finalize}
 			.item{free}
 			.item{purge}
 			.item{rem, remove}
