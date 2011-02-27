@@ -595,6 +595,7 @@
 			.item{apply}
 			.item{combine}
 			.item{concat, concatenate}
+			.item{join}
 			.item{merge}
 		}
 	}
