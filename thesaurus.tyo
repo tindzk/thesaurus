@@ -28,6 +28,7 @@
 			.item{attr, attribute}
 			.item{class}
 			.item{context}
+			.item{dependency}
 			.item{hidden}
 			.item{ident, identifier}
 			.item{inheritance}
@@ -52,12 +53,21 @@
 		}
 	}
 
+	.section[States] {
+		.list {
+			.item{mutable}
+			.item{volatile}
+		}
+	}
+
 	.section[Loops, Lists and Arrays] {
 		.list {
+			.item{bucket}
 			.item{el, elem, element}
 			.item{i, idx, index}
 			.item{it, item}
 			.item{it, iter, iterator}
+			.item{slot}
 		}
 	}
 
@@ -104,10 +114,13 @@
 	.section[Tasks and Operations] {
 		.list {
 			.item{action}
+			.item{batch}
+			.item{bulk}
+			.item{mass}
 			.item{op, operation}
+			.item{proc, process}
 			.item{routine}
 			.item{task}
-			.item{proc, process}
 		}
 	}
 
@@ -282,6 +295,7 @@
 .chapter[Function names] {
 	.section[Object-Orientation] {
 		.list {
+			.item{depend}
 			.item{inherit}
 		}
 	}
