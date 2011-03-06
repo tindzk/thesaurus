@@ -111,11 +111,22 @@
 		}
 	}
 
+	.section[Graphical User Interfaces] {
+		.list {
+			.item{box}
+			.item{dialog}
+			.item{entry}
+			.item{opt, option}
+			.item{widget}
+		}
+	}
+
 	.section[Tasks and Operations] {
 		.list {
 			.item{action}
 			.item{batch}
 			.item{bulk}
+			.item{job}
 			.item{mass}
 			.item{op, operation}
 			.item{proc, process}
@@ -145,21 +156,27 @@
 		}
 	}
 
-	.section[Memory] {
+	.section[Memory and Garbage Collection] {
 		.list {
+			.item{addr, address}
 			.item{allocator}
 			.item{arena}
+			.item{buf, buffer}
 			.item{mem, memory}
 			.item{pool}
+			.item{ptr, pointer}
+			.item{refcnt, reference count}
+			.item{size}
 		}
 	}
 
 	.section[Networking] {
 		.list {
+			.item{conn, connection}
 			.item{host}
 			.item{ip}
+			.item{payload}
 			.item{socket}
-			.item{conn, connection}
 		}
 	}
 
@@ -260,6 +277,7 @@
 			.item{db, database}
 			.item{qry, query}
 			.item{record}
+			.item{snapshot}
 		}
 	}
 
@@ -309,8 +327,10 @@
 			.item{disconn, disconnect}
 			.item{emit}
 			.item{pass}
+			.item{register}
 			.item{subscribe}
 			.item{trigger}
+			.item{unregister}
 			.item{unsubscribe}
 		}
 	}
@@ -404,6 +424,7 @@
 			.item{appendChild}
 			.item{collapse}
 			.item{createElement}
+			.item{expand}
 			.item{getChildren}
 			.item{hasChildren}
 			.item{setAttribute}
@@ -424,8 +445,10 @@
 			.item{dispose}
 			.item{free}
 			.item{new}
+			.item{ref, reference}
 			.item{release}
 			.item{retain}
+			.item{unref, unreference}
 		}
 	}
 
@@ -442,6 +465,16 @@
 			.item{send, e.g. sendAuthRequest}
 			.item{upload}
 			.item{write}
+		}
+	}
+
+	.section[Graphical User Interfaces] {
+		.list {
+			.item{activate}
+			.item{draw}
+			.item{hide}
+			.item{paint}
+			.item{update}
 		}
 	}
 
@@ -570,6 +603,7 @@
 			.item{drop}
 			.item{dtor, destructor}
 			.item{erase}
+			.item{exit}
 			.item{finalize}
 			.item{free}
 			.item{purge}
