@@ -139,7 +139,9 @@
 		.list {
 			.item{block}
 			.item{bundle}
+			.item{context}
 			.item{entity}
+			.item{group}
 			.item{session}
 			.item{transaction}
 		}
@@ -162,19 +164,24 @@
 			.item{allocator}
 			.item{arena}
 			.item{buf, buffer}
+			.item{chunk}
+			.item{context}
 			.item{mem, memory}
 			.item{pool}
 			.item{ptr, pointer}
 			.item{refcnt, reference count}
+			.item{segment}
 			.item{size}
 		}
 	}
 
 	.section[Networking] {
 		.list {
+			.item{chunk}
 			.item{conn, connection}
 			.item{host}
 			.item{ip}
+			.item{packet}
 			.item{payload}
 			.item{socket}
 		}
@@ -324,10 +331,13 @@
 			.item{bind}
 			.item{call}
 			.item{conn, connect}
+			.item{detach}
 			.item{disconn, disconnect}
 			.item{emit}
+			.item{notify}
 			.item{pass}
 			.item{register}
+			.item{restore}
 			.item{subscribe}
 			.item{trigger}
 			.item{unregister}
@@ -408,12 +418,18 @@
 
 	.section[Loops, Lists and Arrays] {
 		.list {
+			.item{add}
 			.item{bwd, backward}
 			.item{each, foreach}
 			.item{enum, enumerate}
+			.item{find}
 			.item{fwd, forward}
 			.item{iter, iterate}
 			.item{list}
+			.item{lookup}
+			.item{pop}
+			.item{push}
+			.item{remove}
 			.item{rev, reverse}
 			.item{rpt, repeat}
 		}
@@ -444,10 +460,14 @@
 			.item{alloc, allocate}
 			.item{dispose}
 			.item{free}
+			.item{link}
 			.item{new}
 			.item{ref, reference}
+			.item{relate}
 			.item{release}
 			.item{retain}
+			.item{steal}
+			.item{unlink}
 			.item{unref, unreference}
 		}
 	}
@@ -503,7 +523,7 @@
 			.item{read}
 			.item{recv, receive}
 			.item{request}
-			.item{retrieve}
+			.item{retr, retrieve}
 		}
 	}
 
@@ -526,9 +546,11 @@
 
 	.section[Iterating] {
 		.list {
+			.item{each, foreach}
 			.item{getIter, getIterator}
 			.item{iter, iterate}
 			.item{key}
+			.item{list}
 			.item{map}
 			.item{next}
 			.item{prev}
@@ -567,8 +589,10 @@
 	.section[File] {
 		.list {
 			.item{append}
+			.item{lock}
 			.item{open}
 			.item{read}
+			.item{unlock}
 			.item{write}
 		}
 	}
@@ -663,6 +687,7 @@
 			.item{extract}
 			.item{filter}
 			.item{find, e.g. findRoute, rfind, reverseFind}
+			.item{lookup}
 			.item{match}
 			.item{read}
 			.item{scan}
