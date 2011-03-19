@@ -1029,61 +1029,28 @@
 	}
 }
 
-.chapter[Credits] {
-	Most OO-related terms were taken from the book "PHP Design
-	Patterns" by Stephan Schmidt.
+.chapter[Appendix] {
+	.section[Credits] {
+		Most OO-related terms were taken from  the book "PHP Design Patterns" by
+		Stephan Schmidt.  Contributions were received from:
 
-	.section[Contributions] {
 		.list {
 			.item{Zachary Halbrecht}
 		}
 	}
-}
 
-.chapter[License] {
-	.p {
-		Licensed under the EUPL, Version 1.1 only (the
-		.i{"Licence"}); You may not use this work except in
-		compliance with the Licence.
+	.section[License] {
+		Licensed under the EUPL,  Version 1.1 only (the .i{"Licence"});  You may
+		not use this work except in compliance with the Licence.
 	}
 
-	.p {
-		You may obtain a copy of the Licence at:
-
-		.url[http://ec.europa.eu/idabc/eupl] {
-			http://ec.europa.eu/idabc/eupl
+	.section[See also] {
+		.list {
+			.item{.url[http://flattr.com/thing/79136/The-programmers-thesaurus]{Donate}}
+			.item{.url[http://github.com/tindzk/thesaurus/blob/master/thesaurus.tyo]{View source}}
+			.item{.url[http://github.com/tindzk/thesaurus/issues]{Issue tracker}}
+			.item{.url[http://tindzk.github.com/]{Other projects}}
+			.item{.mail[tim.nieradzik@gmx.de]{Contact}}
 		}
 	}
-
-	.p {
-		Unless required by applicable law or agreed to in writing,
-		software distributed under the Licence is distributed on an
-		"AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-		either express or implied.
-	}
-
-	.p {
-		See the Licence for the specific language governing
-		permissions and limitations under the Licence.
-	}
-}
-
-
-.chapter[See also] {
-	.list {
-		.item{.url[http://github.com/tindzk/thesaurus/blob/master/thesaurus.tyo]{View source}}
-		.item{.url[http://github.com/tindzk]{GitHub account}}
-	}
-}
-
-.chapter[Donate] {
-	.url[http://flattr.com/thing/79136/The-programmers-thesaurus] {
-		.image {
-			http://api.flattr.com/button/button-compact-static-100x17.png
-		}
-	}
-}
-
-.chapter[Contact] {
-	.mail[tim.nieradzik@gmx.de]{Tim Nieradzik}
 }
