@@ -56,6 +56,7 @@
 	.section[States] {
 		.list {
 			.item{mutable}
+			.item{transient}
 			.item{volatile}
 		}
 	}
@@ -89,6 +90,13 @@
 			.item{mins, minutes}
 			.item{time}
 			.item{y, year}
+		}
+	}
+
+	.section[Processes] {
+		.list {
+			.item{pid, processId}
+			.item{proc, process}
 		}
 	}
 
@@ -130,6 +138,7 @@
 			.item{mass}
 			.item{op, operation}
 			.item{proc, process}
+			.item{progress}
 			.item{routine}
 			.item{task}
 		}
@@ -164,6 +173,7 @@
 			.item{allocator}
 			.item{arena}
 			.item{buf, buffer}
+			.item{capacity}
 			.item{chunk}
 			.item{context}
 			.item{mem, memory}
@@ -189,8 +199,8 @@
 
 	.section[Web development] {
 		.list {
-			.item{sess, session}
 			.item{cookie}
+			.item{sess, session}
 		}
 	}
 
@@ -269,11 +279,12 @@
 
 	.section[Positions and lengths] {
 		.list {
+			.item{capacity}
+			.item{cnt, count}
+			.item{len, length}
 			.item{off, offset}
 			.item{pos, position}
 			.item{size}
-			.item{cnt, count}
-			.item{len, length}
 		}
 	}
 
@@ -301,11 +312,12 @@
 
 	.section[Characters and Strings] {
 		.list {
-			.item{s, str: string}
+			.item{buf, buffer}
 			.item{c, ch: character}
 			.item{cstr: C string}
+			.item{len, length}
+			.item{s, str: string}
 			.item{sz: zero-terminated string}
-			.item{buf, buffer}
 		}
 	}
 
@@ -334,7 +346,9 @@
 			.item{detach}
 			.item{disconn, disconnect}
 			.item{emit}
+			.item{invoke}
 			.item{notify}
+			.item{observe}
 			.item{pass}
 			.item{register}
 			.item{restore}
@@ -432,6 +446,7 @@
 			.item{remove}
 			.item{rev, reverse}
 			.item{rpt, repeat}
+			.item{rwd, rewind}
 		}
 	}
 
@@ -460,6 +475,7 @@
 			.item{alloc, allocate}
 			.item{dispose}
 			.item{free}
+			.item{invalidate}
 			.item{link}
 			.item{new}
 			.item{ref, reference}
@@ -488,6 +504,16 @@
 		}
 	}
 
+	.section[Encoding] {
+		.list {
+			.item{decode}
+			.item{decrypt}
+			.item{encode}
+			.item{encrypt}
+			.item{mangle}
+		}
+	}
+
 	.section[Graphical User Interfaces] {
 		.list {
 			.item{activate}
@@ -498,19 +524,35 @@
 		}
 	}
 
-	.section[Tasks] {
+	.section[Tasks and Operations] {
 		.list {
-			.item{exec, execute}
+			.item{continue}
 			.item{handle}
 			.item{hold}
+			.item{invoke}
+			.item{launch}
+			.item{proceed}
 			.item{process}
+			.item{redo}
 			.item{request}
+			.item{reset}
 			.item{respond}
 			.item{restart}
+			.item{resume}
 			.item{run}
 			.item{start}
 			.item{stop}
 			.item{suspend}
+			.item{undo}
+		}
+	}
+
+	.section[Processes] {
+		.list {
+			.item{exec, execute}
+			.item{kill}
+			.item{launch}
+			.item{restart}
 		}
 	}
 
@@ -575,6 +617,7 @@
 			.item{contains}
 			.item{diff}
 			.item{eq, equals, isEqual}
+			.item{matches}
 		}
 	}
 
@@ -630,7 +673,10 @@
 			.item{exit}
 			.item{finalize}
 			.item{free}
+			.item{invalidate}
+			.item{kill}
 			.item{purge}
+			.item{release}
 			.item{rem, remove}
 			.item{term, terminate}
 			.item{uninstall}
@@ -708,6 +754,8 @@
 			.item{getLine}
 			.item{getMessage}
 			.item{getTrace}
+			.item{pass}
+			.item{raise}
 			.item{throw}
 			.item{try}
 		}
@@ -736,12 +784,13 @@
 		.item{Figure}
 		.item{Filter}
 		.item{FrontController: addPreFilter, addPostFilter, handleRequest}
-		.item{Handler}
+		.item{Handler, e.g. RequestHandler}
 		.item{Implementation}
 		.item{Instance}
 		.item{Interface}
 		.item{Listener}
 		.item{Manager}
+		.item{Middleware}
 		.item{Operation}
 		.item{Processor}
 		.item{Provider}
@@ -787,6 +836,7 @@
 			.item{IteratorAggregate}
 			.item{Observable: attach, detach, notify}
 			.item{Processor}
+			.item{Serializable}
 		}
 	}
 }
@@ -834,6 +884,7 @@
 		.item{idling}
 		.item{initialising}
 		.item{lingering}
+		.item{pending}
 		.item{processing}
 		.item{reading}
 		.item{waiting}
