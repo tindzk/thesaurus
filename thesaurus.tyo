@@ -21,15 +21,26 @@
 }
 
 .chapter[Variable, Property and Attribute names] {
+	.section[Language features] {
+		.list {
+			.item{arg, argument}
+			.item{attr, attribute}
+			.item{const, constant}
+			.item{def, default}
+			.item{func, function}
+			.item{ident, identifier}
+			.item{param, parameter}
+			.item{spec, specifier}
+			.item{var, variable}
+		}
+	}
+
 	.section[Object-Orientation] {
 		.list {
 			.item{action}
-			.item{arg, argument}
-			.item{attr, attribute}
 			.item{class}
 			.item{context}
 			.item{dependency}
-			.item{hidden}
 			.item{ident, identifier}
 			.item{inheritance}
 			.item{inst, instance}
@@ -38,7 +49,6 @@
 			.item{meth, method}
 			.item{mod, module}
 			.item{obj, object}
-			.item{param, parameter}
 			.item{priv, private}
 			.item{prop, property}
 			.item{protected}
@@ -49,12 +59,12 @@
 			.item{self}
 			.item{shared}
 			.item{this}
-			.item{var, variable}
 		}
 	}
 
 	.section[States] {
 		.list {
+			.item{hidden}
 			.item{mutable}
 			.item{transient}
 			.item{volatile}
@@ -124,6 +134,8 @@
 			.item{box}
 			.item{dialog}
 			.item{entry}
+			.item{expose}
+			.item{geometry}
 			.item{opt, option}
 			.item{widget}
 		}
@@ -158,6 +170,7 @@
 
 	.section[Event handling] {
 		.list {
+			.item{caller}
 			.item{cb, callback}
 			.item{context}
 			.item{hook}
@@ -172,6 +185,7 @@
 			.item{addr, address}
 			.item{allocator}
 			.item{arena}
+			.item{block}
 			.item{buf, buffer}
 			.item{capacity}
 			.item{chunk}
@@ -182,6 +196,7 @@
 			.item{refcnt, reference count}
 			.item{segment}
 			.item{size}
+			.item{storage}
 		}
 	}
 
@@ -296,6 +311,13 @@
 			.item{qry, query}
 			.item{record}
 			.item{snapshot}
+		}
+	}
+
+	.section[Binaries] {
+		.list {
+			.item{symtab, symbol table}
+			.item{syms, symbols}
 		}
 	}
 
@@ -421,6 +443,7 @@
 
 	.section[Strings] {
 		.list {
+			.item{append}
 			.item{bind}
 			.item{concat, concatenate}
 			.item{format}
@@ -611,6 +634,14 @@
 		}
 	}
 
+	.section[ORM] {
+		.list {
+			.item{belongsTo}
+			.item{hasOne}
+			.item{hasMany}
+		}
+	}
+
 	.section[Comparing] {
 		.list {
 			.item{cmp, compare}
@@ -642,7 +673,9 @@
 
 	.section[Construction] {
 		.list {
+			.item{acquire}
 			.item{alloc, allocate}
+			.item{boot, bootstrap}
 			.item{bootstrap}
 			.item{build}
 			.item{constr, construct}
@@ -651,9 +684,11 @@
 			.item{decl, declare}
 			.item{init, initialize}
 			.item{install}
+			.item{instantiate}
 			.item{load, e.g. loadFile}
 			.item{make}
 			.item{new}
+			.item{start}
 		}
 	}
 
@@ -663,6 +698,7 @@
 			.item{clean}
 			.item{clear}
 			.item{close}
+			.item{commit}
 			.item{del, delete}
 			.item{destroy}
 			.item{destruct}
@@ -678,6 +714,7 @@
 			.item{purge}
 			.item{release}
 			.item{rem, remove}
+			.item{stop}
 			.item{term, terminate}
 			.item{uninstall}
 			.item{unlink}
@@ -878,7 +915,7 @@
 	}
 }
 
-.chapter[States] {
+.chapter[Processes] {
 	.list {
 		.item{connecting}
 		.item{idling}
@@ -889,6 +926,21 @@
 		.item{reading}
 		.item{waiting}
 		.item{writing}
+	}
+}
+
+.chapter[States] {
+	.list {
+		.item{attached}
+		.item{closed}
+		.item{connected}
+		.item{idle}
+		.item{initialized}
+		.item{listening}
+		.item{paused}
+		.item{readable}
+		.item{stalled}
+		.item{writable}
 	}
 }
 
